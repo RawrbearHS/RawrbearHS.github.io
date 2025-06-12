@@ -26,5 +26,6 @@ then pulls it and builds it for the web, publishing it on GitHub Pages.
   git clone https://github.com/RawrbearHS/RawrbearHS.github.io.git
   ```
 3. In the terminal, navigate to the project folder with `cd`.
-4. Run `deno task serve`, which downloads dependencies for Lume and some other libraries.
+4. Run `deno task serve`. This downloads dependencies for Lume and some other libraries,
+then runs a web server on your computer to host the website on your network.
 4. Open http://localhost:3000/.
