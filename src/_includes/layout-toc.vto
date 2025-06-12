@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+                <meta charset="UTF-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <title>{{ title }} | Rawrbear</title>
+                <link rel="icon" href="/img/favicon.ico">
+                <link rel="stylesheet" href="/uno.css">
+                <link rel="stylesheet" href="/style.css">
+		<link rel="stylesheet" href="/highlightjs.css">
+        </head>
+	<body>
+		{{ comp.nav() }}
+		<div id="content">
+			<div
+			flex flex-row justify-center
+			{{# py-15 #}}
+			>
+				{{ if toc.length }}
+				<nav
+				{{# bg-yellow #}}
+				border-2 border-black
+				mt-10
+				sticky top-10
+				{{# my-15 #}}
+				hidden lg:flex
+				overflow-y-scroll
+				class="toc w-2/5 lg:w-1/4"
+				style="height: 80vh;" {{# Cursed, I know #}}
+				>
+					<ol
+					space-y-2
+					md:p-4 lg:p-7
+					>
+					<h3><a href="#">{{ title }}</a></h3>
+					{{ for item of toc }}
+						<li>
+							<a font-bold text-lg href="#{{ item.slug }}">{{ item.text }}</a>
+							{{ if item.children.length }}
+							<ul>
+								{{ for child of item.children }}
+								<li>
+									<a
+									href="#{{ child.slug }}"
+									ml-5>{{ child.text }}</a>
+								</li>
+								{{ /for }}
+							</ul>
+							{{ /if }}
+						</li>
+						{{ /for }}
+					</ol>
+				</nav>
+				{{ /if }}
+				{{# Messy div, but effective for layout.... ;-; #}}
+				<div
+				{{# bg-blue #}}
+				flex justify-center
+				{{# md:ml-75 #}}
+				w-full
+				>
+					<article
+					{{# bg-green #}}
+					{{# px-2 #}}
+					space-y-5
+					class="w-full lg:w-4/5"
+					>
+						{{ content }}
+					</article>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="/js/anchor.js"></script>
+</html>

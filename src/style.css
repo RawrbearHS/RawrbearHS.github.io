@@ -1,0 +1,99 @@
+body {
+    font-family: "Inter Tight", Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+    @apply text-md;
+    /* @apply ml-10 md:ml-15; */
+    /* @apply mr-10 md:mr-15; */
+}
+
+#content {
+    @apply ml-0 md:ml-15;
+    @apply mr-0 md:mr-15;
+    @apply mt-7 md:mt-10;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Figtree", "Inter Tight", Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif !important;
+    font-weight: bold;
+    letter-spacing: -0.05rem;
+}
+
+h1 { @apply text-3xl md:text-4xl; }
+h2 { @apply text-xl  md:text-3xl; }
+h3, h4, h5, h6 { 
+     @apply text-lg  md:text-2xl;
+}
+
+pre {
+    @apply text-sm block w-min m-1;
+}
+code {
+    font-family: "Geist Mono", 'Cascadia Code', 'Source Code Pro', Menlo, ui-monospace, Consolas, 'DejaVu Sans Mono', monospace;
+    @apply border-2 border-black
+    /* @apply text-sm bg-stone-100 p-1; */
+    /* font-weight: bold; */
+}
+
+b {
+    font-weight: bold !important;
+}
+
+table, th, td {
+    border: 2px solid black;
+    padding: 0.5rem;
+}
+
+article {
+    @apply px-5 mb-33vh;
+}
+
+section {
+    @apply mt-5 mb-5;
+}
+
+section > *:not(section) {
+    @apply mt-4 mb-4;
+}
+
+/* Do not match permalinks */
+a:not([href^="#"]) {
+    color: #13c59b;
+}
+
+/* a:not([href^="#"]):hover { */
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    border-radius: 10px;
+    width: 45%;
+}
+
+.gallery {
+    @apply flex flex-wrap align-center justify-center md:justify-start place-items-center;
+}
+.gallery img {
+    @apply    w-1/2           m-2;
+    @apply md:w-50 md:h-50 md:m-3;
+}
+.gallery img.wide {
+    @apply    w-1/2           m-2;
+    @apply md:w-67 md:h-50 md:m-3;
+}
+
+#nav .navbutton {
+    @apply pl-1 pr-1 text-lg font-medium color-black;
+    font-family: Figtree, "Inter Tight", Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+}
+
+#nav .navbutton:hover {
+    text-decoration: underline;
+}
+
+/* a.header-anchor::before {
+  content: '';
+  display: block;
+  height:      75px;
+  margin-top: -75px;
+  visibility: hidden;
+} */

@@ -1,0 +1,9 @@
+[project]
+name = "gallery-datagen"
+version = "0.1.0"
+description = "Generates the gallery site's template code from Hopscotch URLs"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "requests>=2.32.3",
+]

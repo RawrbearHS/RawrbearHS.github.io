@@ -1,0 +1,5 @@
+_site
+_cache
+
+/gallery-datagen/projects
+.venv

@@ -1,0 +1,37 @@
+<a class="gallery-project" href="{{ href }}"
+flex flex-col place-items-center
+bg-white rounded-5 hover:drop-shadow-lg
+hover:no-underline m-1
+>
+        <img
+                alt="{{ name }}" src="{{ img }}"
+                {{ if wide }} class="wide" {{ /if }}
+        />
+        <div 
+        text-lg color-black
+        flex flex-col place-items-center
+        pl-5 pr-5 pb-3
+        >
+                <span text-lg font-bold>{{ name }}</span>
+                
+                <div text-base flex flex-row space-x-2>
+                        {{ if likes }}
+                        <span flex flex-row place-items-center>
+                                <svg xmlns="http://www.w3.org/2000/svg" m-2 w-3 viewBox="0 0 24 24"><title>heart</title><path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z" /></svg>
+                                {{ likes }} likes
+                        </span>
+                        {{ /if }}
+
+                        {{ if plays }}
+                        <span flex flex-row place-items-center>
+                                <svg xmlns="http://www.w3.org/2000/svg" m-1 w-4 viewBox="0 0 24 24"><title>plays</title><path d="M8,5.14V19.14L19,12.14L8,5.14Z" /></svg>
+                                {{ plays }} plays
+                        </span>
+                        {{ /if }}
+                </div>
+
+                {{ if date }}
+                        <span text-base>{{ date }}</span>
+                {{ /if }}
+        </div>
+</a>

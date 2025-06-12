@@ -1,0 +1,26 @@
+<nav
+id="nav"
+{{# sticky top-0 #}}
+bg-white drop-shadow z-10
+flex flex-col md:flex-row items-center justify-content-center justify-between
+p-5 pl-10 pr-10
+{{# pb-10 #}}
+space-x-2
+>
+        <a flex space-x-3 lg:space-x-4 href="/">
+                <img src="/img/rawrbear-text.svg" w-36 lg:w-48 alt="Rawrbear" />
+                <img src="/img/rawrbear-logo.svg" w-12 lg:w-16 alt="Rawrbear"
+                hover:animate-spin
+                />
+        </a>
+        <div
+        flex flex-end
+        space-x-5 p-3 pl-4 pr-4
+        m-5 mb-2 md:mb-5
+        border-2 border-black
+        >
+                <a class="navbutton" href="/gallery">Gallery</a>
+                <a class="navbutton" href="/wips">WIPs</a>
+                <a class="navbutton" href="/extras">Extras</a>
+        </div>
+</nav>
