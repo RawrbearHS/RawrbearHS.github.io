@@ -243,7 +243,7 @@ Overhauls vanilla biomes in subtle, but satisfying ways.
 
 Adds new terrain generation and natural features to the Nether, as well as a few structures.
 
-[Hearts - Gallery](https://www.curseforge.com/minecraft/mc-mods/hearths/gallery)
+[Hearths - Gallery](https://www.curseforge.com/minecraft/mc-mods/hearths/gallery)
 
 ![](https://media.forgecdn.net/attachments/685/140/crimson_tower.jpg)
 
