@@ -4,7 +4,7 @@ import robots from "lume/plugins/robots.ts";
 import code_highlight from "lume/plugins/code_highlight.ts";
 import google_fonts from "lume/plugins/google_fonts.ts";
 import toc from "https://deno.land/x/lume_markdown_plugins@v0.8.0/toc.ts";
-import { imgLazyload } from "npm:@mdit/plugin-img-lazyload";
+// import { imgLazyload } from "npm:@mdit/plugin-img-lazyload";
 import headerSections from 'npm:markdown-it-header-sections'
 
 import unocss from "lume/plugins/unocss.ts";
@@ -16,11 +16,14 @@ import lightningCss from "lume/plugins/lightningcss.ts";
 // import brotli from "lume/plugins/brotli.ts";
 
 const markdown = {
-  plugins: [imgLazyload, headerSections],
+  plugins: [
+    /*imgLazyload,*/
+    headerSections
+  ],
 };
 const site = lume(
-    { src: "./src" },
-    { markdown }
+  { src: "./src" },
+  { markdown }
 );
 site.add("img");
 // site.add("js");
@@ -48,9 +51,9 @@ site.use(terser(
 */
 
 site.use(google_fonts({
-    subsets: ["latin"],
-    fonts:
-        "https://fonts.google.com/share?selection.family=Figtree:ital,wght@0,300..900;1,300..900|Geist+Mono:wght@100..900|Inter+Tight:ital,wght@0,100..900;1,100..900"
+  subsets: ["latin"],
+  fonts:
+    "https://fonts.google.com/share?selection.family=Figtree:ital,wght@0,300..900;1,300..900|Geist+Mono:wght@100..900|Inter+Tight:ital,wght@0,100..900;1,100..900"
 }));
 
 site.use(toc({
@@ -61,10 +64,10 @@ site.use(toc({
 }));
 
 site.use(unocss({
-    reset: "tailwind",
-    cssFile: "./uno.css",
-    // @ts-ignore invalid type
-    options: unoConfig
+  reset: "tailwind",
+  cssFile: "./uno.css",
+  // @ts-ignore invalid type
+  options: unoConfig
 }));
 
 site.use(minifyHTML());
