@@ -7,7 +7,21 @@ title: Idea List
 
 In February of 2017, a group of forumers got together to make the biggest idea list ever conceived on the Hopscotch forum. This is the result!
 
-Credit to @Rawrbear, @Dude73, @Huggingfluffybear, @smishsmash, @PopTart0219, @Fun_in_the_Sun, @Giraffedolphin26, @GysvANDRegulus, @Sparkczy, @AHappyCoder, CreativeCoder, @MobCraft and @JonnyGamer from the forum for helping on the list! We worked hard on putting in ***tons*** of ideas into one ***huuuuuuuge*** list!
+Credit to
+<span class="mention">@Rawrbear</span>,
+<span class="mention">@Dude73</span>,
+<span class="mention">@Huggingfluffybear</span>,
+<span class="mention">@smishsmash</span>,
+<span class="mention">@PopTart0219</span>,
+<span class="mention">@Fun_in_the_Sun</span>,
+<span class="mention">@Giraffedolphin26</span>,
+<span class="mention">@GysvANDRegulus</span>,
+<span class="mention">@Sparkczy</span>,
+<span class="mention">@AHappyCoder</span>,
+<span class="mention">@CreativeCoder</span>,
+<span class="mention">@MobCraft</span> and
+<span class="mention">@JonnyGamer</span>
+from the forum for helping on the list! We worked hard on putting in ***tons*** of ideas into one ***huuuuuuuge*** list!
 
 <div flex flex-col space-y-2 text-center place-items-center>
         <span>Rainforest music</span>
